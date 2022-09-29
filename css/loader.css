@@ -1,0 +1,56 @@
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.loader_bin {
+  display: flex;
+  justify-content: space-between;
+  width: 170px;
+}
+.bin {
+  width: 14.2px;
+  height: 25.6px;
+  border-radius: 10px;
+  transform: rotate(-135deg);
+}
+.loading {
+  animation: loader 1s ease-in-out infinite;
+}
+.bin_lightpink {
+  background-color: rgb(233, 200, 185);
+}
+.bin_red {
+  background-color: rgb(207, 131, 120);
+  animation-delay: 0.1s;
+}
+.bin_pink {
+  background-color: rgb(227, 172, 152);
+  animation-delay: 0.2s;
+}
+.bin_lightblue {
+  background-color: rgb(188, 214, 229);
+  animation-delay: 0.3s;
+}
+.bin_green {
+  background-color: rgb(146, 192, 208);
+  animation-delay: 0.4s;
+}
+.bin_yellow {
+  background-color: rgb(235, 198, 128);
+  animation-delay: 0.5s;
+}
+.bin_orange {
+  background-color: rgb(233, 156, 125);
+  animation-delay: 0.6s;
+}
+@keyframes loader {
+  from {
+    transform: rotate(-135deg) translateY(10px);
+  }
+  to {
+    transform: rotate(-135deg) translateY(0);
+  }
+}

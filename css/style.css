@@ -1,0 +1,29 @@
+/* common 전체페이지 */
+.wrap {
+  box-sizing: border-box;
+}
+.inner {
+  width: 1440px;
+  border: 1px solid #000;
+  margin: auto;
+}
+/* loader 로더 */
+/*  header 헤더 */
+header {
+}
+.header_inner {
+}
+.logo {
+}
+/* nav 네비게이션 */
+nav {
+}
+nav ul {
+}
+nav ul li {
+}
+nav ul li a {
+}
+/* section1 - about */
+/* profile 프로필 */
+/* information 정보 */
