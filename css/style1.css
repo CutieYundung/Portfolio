@@ -1,0 +1,356 @@
+@charset "utf-8";
+
+/* Google font*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/* font-family: 'Inter', sans-serif; */
+
+/* netmable font */
+@font-face {
+  font-family: "bold";
+  src: url("../font/welcome_font/welcome\ Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "nomal";
+  src: url("../font/welcome_font/welcome\ Regular.ttf") format("truetype");
+}
+
+/* common 전체페이지 */
+.wrap {
+  width: 1920px;
+  margin: auto;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  color: rgb(0, 0, 0, 0.8);
+}
+.inner {
+  width: 1536px;
+  margin: auto;
+}
+a {
+  color: rgb(0, 0, 0, 0.8);
+}
+/* loader 로더 */
+.loader {
+}
+/*  header 헤더 */
+header {
+  width: 100%;
+  height: 40px;
+  padding-top: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.header_inner {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  display: flex;
+  opacity: 80%;
+}
+.logo img {
+  width: 50px;
+  height: auto;
+}
+.logo_text {
+  margin-left: 0.3em;
+}
+.logo_text span {
+  display: block;
+  font-weight: 500;
+}
+.logo span:nth-child(1) {
+  font-size: 14px;
+  font-weight: 600;
+  padding-top: 0.2em;
+}
+.logo span:nth-child(2) {
+  font-size: 12px;
+  color: #7a5853;
+}
+/* nav 네비게이션 */
+nav {
+  text-transform: uppercase;
+}
+nav ul {
+  display: flex;
+  height: 100%;
+}
+nav ul li {
+}
+nav ul li a {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 500;
+  padding-left: 2em;
+  position: relative;
+  padding-top: 0.5em;
+  transition: 0.2s;
+}
+nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 3.5px;
+  position: absolute;
+  bottom: -0.2em;
+  left: 1.8em;
+  transition: 0.2s;
+}
+nav ul li:nth-child(1) a:before,
+nav ul li:nth-child(1) a:after {
+  background-color: #e9c8b9;
+}
+nav ul li:nth-child(2) a:before,
+nav ul li:nth-child(2) a:after {
+  background-color: #bcd6e5;
+}
+nav ul li:nth-child(3) a:before,
+nav ul li:nth-child(3) a:after {
+  background-color: #ebc680;
+}
+/* header-on추가 */
+nav ul li a.on::before {
+  content: "";
+  width: 14.2px;
+  height: 25.6px;
+  border-radius: 10px;
+  transform: rotate(-135deg);
+  position: absolute;
+  top: 0.2em;
+  left: 0.9em;
+}
+nav ul li a.on::after {
+  opacity: 1;
+  width: calc(100% - 1.6em);
+}
+nav ul li a.on {
+  padding-top: 0.3em;
+  opacity: 1;
+}
+nav ul li a:hover {
+  padding-top: 0.3em;
+}
+nav ul li a:hover:after {
+  width: calc(100% - 1.6em);
+  bottom: -0.25em;
+}
+
+/* section1 - about */
+section.about {
+  width: 100%;
+  position: relative;
+  margin-top: calc(3em + 60px);
+}
+.about_inner {
+  display: flex;
+}
+.bg_circle {
+  width: 500px;
+  height: 650px;
+  background-color: #e9c8b9;
+  clip-path: ellipse(309.58px 326.44px at 50% 50%);
+  position: absolute;
+  left: -0%;
+  top: -0%;
+  z-index: -1;
+}
+/* profile 프로필 */
+.profile {
+  flex: 1;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-top: 7em;
+}
+.profile_img {
+  width: 100%;
+}
+.profile_img img {
+  max-width: 100%;
+  height: auto;
+}
+.click_me {
+  width: 557px;
+  height: 555px;
+  position: absolute;
+  top: -29px;
+  left: -6%;
+  cursor: pointer;
+  transform: rotate(-5deg);
+}
+.click_me:hover {
+  animation: clickMe 0.3s linear forwards;
+}
+@keyframes clickMe {
+  form {
+    transform: rotate(90deg);
+  }
+  to {
+    transform: rotate(355deg);
+  }
+}
+.click_me img {
+  max-width: 100%;
+  height: auto;
+}
+/* information 정보 */
+.information {
+  flex: 1.8;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas:
+    "contact license"
+    "education career"
+    "skills skills";
+  grid-gap: 5em 7em;
+  margin-left: 5em;
+  padding: 5em 0em 5em 0em;
+}
+.information > div {
+}
+.contact {
+  grid-area: contact;
+}
+.license {
+  grid-area: license;
+}
+.education {
+  grid-area: education;
+}
+.career {
+  grid-area: career;
+}
+.skills {
+  grid-area: skills;
+}
+.subtitle {
+  display: flex;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+.bin_lightpink {
+}
+.subtitle span {
+  display: inline-block;
+  font-size: 1.4em;
+  font-weight: 600;
+  margin-left: 0.5em;
+  padding-top: 0.3em;
+}
+ul.desc {
+  font-family: "nomal";
+  padding-left: 2.5em;
+}
+ul.desc li {
+  font-size: 1em;
+}
+ul.desc li span {
+  display: inline-block;
+  margin-right: 2em;
+  margin-bottom: 0.8em;
+  font-size: 0.9em;
+  color: #7a5853;
+}
+ul.desc li p {
+  font-size: 0.9em;
+  padding-left: 10.5em;
+}
+/* skills-graph */
+.circle_graph {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 7em 0 2em;
+}
+.circle_graph > div {
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+.skill_icon {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon_inner {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.circle_graph > div > svg {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(-84deg);
+}
+.circle_graph > div > svg > circle {
+  fill: none;
+  stroke-width: 12px;
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
+}
+.html circle {
+  stroke: #cf8378;
+  animation: pie90 2s linear forwards;
+}
+.css circle {
+  stroke: #92c0d0;
+  animation: pie85 2s linear forwards;
+}
+.js circle {
+  stroke: #ebc680;
+  animation: pie75 2s linear forwards;
+}
+.ps circle {
+  stroke: #bcd6e5;
+  animation: pie85 2s linear forwards;
+}
+.ai circle {
+  stroke: #e99c7d;
+  animation: pie90 2s linear forwards;
+}
+.circle_graph > div > p {
+  text-align: center;
+  font-weight: 500;
+  margin-top: 1em;
+}
+.html p {
+  color: #cf8378;
+}
+.css p {
+  color: #92c0d0;
+}
+.js p {
+  color: #ebc680;
+}
+.ps p {
+  color: #bcd6e5;
+}
+.ai p {
+  color: #e99c7d;
+}
+@keyframes pie90 {
+  100% {
+    stroke-dashoffset: 55;
+  }
+}
+@keyframes pie85 {
+  100% {
+    stroke-dashoffset: 75;
+  }
+}
+@keyframes pie75 {
+  100% {
+    stroke-dashoffset: 100;
+  }
+}

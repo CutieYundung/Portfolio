@@ -114,6 +114,9 @@ ul,
 li {
   list-style: none;
 }
+a {
+  text-decoration-line: none;
+}
 blockquote,
 q {
   quotes: none;
