@@ -3,8 +3,19 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  display: none;
+}
+/* logo 로고 */
+.loader_logo {
+  max-width: 100%;
+  height: 8vh;
+  background: url(../image/logo/logo.svg) no-repeat;
+  opacity: 80%;
+  transform: translateX(25%);
+  margin-bottom: 1em;
 }
 
+/* bins 강낭콩들 */
 .loader_bin {
   display: flex;
   justify-content: space-between;
@@ -20,30 +31,30 @@
   animation: loader 1s ease-in-out infinite;
 }
 .bin_lightpink {
-  background-color: rgb(233, 200, 185);
+  background-color: #e9c8b9;
 }
 .bin_red {
-  background-color: rgb(207, 131, 120);
+  background-color: #cf8378;
   animation-delay: 0.1s;
 }
 .bin_pink {
-  background-color: rgb(227, 172, 152);
+  background-color: #e3ac98;
   animation-delay: 0.2s;
 }
 .bin_lightblue {
-  background-color: rgb(188, 214, 229);
+  background-color: #bcd6e5;
   animation-delay: 0.3s;
 }
 .bin_green {
-  background-color: rgb(146, 192, 208);
+  background-color: #92c0d0;
   animation-delay: 0.4s;
 }
 .bin_yellow {
-  background-color: rgb(235, 198, 128);
+  background-color: #ebc680;
   animation-delay: 0.5s;
 }
 .bin_orange {
-  background-color: rgb(233, 156, 125);
+  background-color: #e99c7d;
   animation-delay: 0.6s;
 }
 @keyframes loader {

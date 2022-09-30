@@ -1,6 +1,26 @@
+/* Google font*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/* font-family: 'Inter', sans-serif; */
+
+/* netmable font */
+@font-face {
+  font-family: "light";
+  src: url("../font/netmarble_font/netmarbleL.ttf") format("truetype");
+}
+@font-face {
+  font-family: "medium";
+  src: url("../font/netmarble_font/netmarbleM.ttf") format("truetype");
+}
+@font-face {
+  font-family: "bold";
+  src: url("../font/netmarble_font/netmarbleB.ttf") format("truetype");
+}
+
 /* common 전체페이지 */
 .wrap {
   box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  color: rgb(0, 0, 0, 0.8);
 }
 .inner {
   width: 1440px;
@@ -8,15 +28,37 @@
   margin: auto;
 }
 /* loader 로더 */
+.loader {
+}
 /*  header 헤더 */
 header {
 }
 .header_inner {
 }
 .logo {
+  display: flex;
+  opacity: 80%;
+}
+.logo img {
+  width: 50px;
+  height: auto;
+}
+.logo_text {
+}
+.logo_text span {
+  display: block;
+  font-weight: 500;
+}
+.logo span:nth-child(1) {
+  font-size: 20px;
+}
+.logo span:nth-child(2) {
+  font-size: 16px;
+  color: #7a5853;
 }
 /* nav 네비게이션 */
 nav {
+  text-transform: uppercase;
 }
 nav ul {
 }
@@ -25,5 +67,32 @@ nav ul li {
 nav ul li a {
 }
 /* section1 - about */
+.bg_circle {
+}
+.about_inner {
+}
 /* profile 프로필 */
+.profile {
+}
+.profile_img {
+}
+.profile_img img {
+}
 /* information 정보 */
+.information {
+}
+.contact {
+}
+.subtitle {
+  display: flex;
+  text-transform: uppercase;
+}
+.bin_lightpink {
+}
+.subtitle span {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 0.5em;
+  padding-top: 0.3em;
+}

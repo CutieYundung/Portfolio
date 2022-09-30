@@ -110,7 +110,8 @@ body {
   background-color: #fbf8f1;
 }
 ol,
-ul {
+ul,
+li {
   list-style: none;
 }
 blockquote,

@@ -1,0 +1,12 @@
+background : #fbf8f1
+font-color: #7A5853 / rgb(0,0,0,0.8)
+
+bin_lightpink: rgb(233, 200, 185)  /  #e9c8b9
+bin_red: rgb(207, 131, 120)  /  #cf8378
+bin_pink: rgb(227, 172, 152)  /  #e3ac98
+bin_lightblue: rgb(188, 214, 229)  /  #bcd6e5
+bin_green: rgb(146, 192, 208)  /  #92c0d0
+bin_yellow: rgb(235, 198, 128)  /  #ebc680
+bin_orange: rgb(233, 156, 125)  /  #e99c7d
+
+section : 
