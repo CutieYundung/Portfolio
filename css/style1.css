@@ -15,34 +15,41 @@
 }
 
 /* common 전체페이지 */
+* {
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
 .wrap {
-  width: 1920px;
-  margin: auto;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
   color: rgb(0, 0, 0, 0.8);
 }
 .inner {
   width: 1536px;
-  margin: auto;
+  margin: 0 auto;
 }
 a {
   color: rgb(0, 0, 0, 0.8);
 }
-/* loader 로더 */
-.loader {
+section {
+  width: 100%;
 }
 /*  header 헤더 */
 header {
   width: 100%;
   height: 40px;
-  padding-top: 20px;
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 100;
+  margin-top: 20px;
 }
 .header_inner {
   height: 100%;
+  margin: 0 150px;
   display: flex;
   justify-content: space-between;
 }
@@ -139,7 +146,7 @@ nav ul li a:hover:after {
 
 /* section1 - about */
 section.about {
-  width: 100%;
+  max-width: 100%;
   position: relative;
   margin-top: calc(3em + 60px);
 }
@@ -152,8 +159,9 @@ section.about {
   background-color: #e9c8b9;
   clip-path: ellipse(309.58px 326.44px at 50% 50%);
   position: absolute;
-  left: -0%;
-  top: -0%;
+  left: 50%;
+  top: 0%;
+  transform: translateX(-200%);
   z-index: -1;
 }
 /* profile 프로필 */
