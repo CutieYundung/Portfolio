@@ -1,0 +1,242 @@
+.sec_contact {
+  margin: 2em 0;
+}
+/* 배경 */
+.contact_bg {
+  position: relative;
+}
+.contact_bg > span {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+}
+.c_b01 {
+  width: 10%;
+  height: 15px;
+  border-radius: 25px;
+  background-color: #e99c7d;
+  transform: translate(-300%, 1000%);
+}
+.c_b02 {
+  width: 15px;
+  height: 15px;
+  border-radius: 3px;
+  background-color: #ebc680;
+  transform: translate(-700%, 800%);
+}
+.c_b03 {
+  width: 3.5%;
+  height: 15px;
+  border-radius: 25px;
+  background-color: #bcd6e5;
+  transform: translate(200%, -2600%);
+}
+.c_b04 {
+  width: 5%;
+  height: 15px;
+  border-radius: 25px;
+  background-color: #92c0d0;
+  transform: translate(850%, 600%);
+}
+.c_b05 {
+  width: 15px;
+  height: 15px;
+  border-radius: 3px;
+  background-color: #e99c7d;
+  transform: translate(5300%, 1000%);
+}
+.c_b06 {
+  transform: translate(-300%, 0%);
+}
+.c_b07 {
+  transform: translate(240%, -600%);
+}
+.c_b06 img,
+.c_b07 img {
+  max-width: 100%;
+  height: auto;
+}
+/* 컨텐츠 */
+.contact_inner {
+  display: flex;
+  margin: 5em 0;
+}
+.c_textbox {
+  flex: 1;
+  font-family: "nomal";
+  padding: 2em 0;
+}
+.c_textbox h2 {
+  font-size: 3.5em;
+  font-weight: 500;
+  color: #e9c8b9;
+}
+.ment {
+  margin: 1.5em 0;
+}
+.ment p {
+  font-size: 1.1em;
+  margin-bottom: 0.7em;
+}
+.address {
+  display: flex;
+}
+.kakao_QR {
+  text-align: center;
+  color: #ebc680;
+  width: 13%;
+}
+.kakao_QR img {
+  max-width: 100%;
+  margin-bottom: 0.3em;
+}
+.address ul.desc {
+  padding: 0.7em 0 0 1em;
+}
+.address ul.desc li {
+}
+.address ul.desc span {
+}
+/* 폼 */
+.c_browser {
+  flex: 1.2;
+}
+.browser_inner {
+  border: 5px solid #ded8d5;
+  border-radius: 30px;
+  background-color: #fff;
+}
+.browser_top {
+  border-bottom: 5px solid #ded8d5;
+  box-sizing: border-box;
+  padding: 1em 1.5em 0.7em 1.5em;
+}
+.browser_top span {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: #e9c8b9;
+  margin-right: 0.4em;
+}
+.browser_top span:nth-child(1) {
+  background-color: #e99c7d;
+}
+.browser_top span:nth-child(2) {
+  background-color: #ebc680;
+}
+.browser_top span:nth-child(3) {
+  background-color: #92c0d0;
+}
+.browser_top p {
+  font-family: "nomal";
+  float: right;
+  color: rgb(122, 88, 83, 0.8);
+}
+/* 입력창 */
+.browser_form {
+  padding: 1em 1.5em 0em 1.5em;
+  color: #7a5853;
+}
+.browser_form form {
+}
+.browser_form form > div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+  position: relative;
+}
+.browser_form form > p {
+  font-family: "nomal";
+  margin: 0.7em 0;
+}
+.browser_form form > div:nth-of-type(3) {
+  display: flex;
+  flex-direction: row;
+  background-color: #ded8d5a0;
+  padding: 1em 0.5em 0.5em 0.5em;
+  border-radius: 7px;
+  font-family: "nomal";
+}
+.browser_form form > div:nth-of-type(3) label,
+.browser_form form > div:nth-of-type(3) input {
+  cursor: pointer;
+}
+.browser_form label:not(.font) {
+  background-color: #fff;
+  width: fit-content;
+  color: rgb(122, 88, 83, 0.8);
+  padding: 0 0.2em;
+  position: absolute;
+  top: -0.5em;
+  left: 10px;
+}
+.browser_form input,
+textarea {
+  outline: none;
+  font-family: "nomal";
+  color: #7a5853;
+  font-size: 1.2em;
+  border: 3px solid #ded8d5;
+  border-radius: 7px;
+  padding: 0.5em;
+}
+input::placeholder,
+textarea::placeholder {
+  color: rgb(122, 88, 83, 0.8);
+}
+/* input checkbox 버튼 커스텀 */
+.browser_form input[type="checkbox"] {
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  position: absolute;
+}
+
+.browser_form input[type="checkbox"] + label:after {
+  content: " ";
+  display: inline-block;
+  width: 18px;
+  height: 16px;
+  padding-top: 2px;
+  line-height: 20px;
+  margin: -2px 5px 0 2px;
+  text-align: center;
+  vertical-align: middle;
+  background: #fafafa;
+  border-radius: 3px;
+}
+
+.browser_form input[type="checkbox"]:checked + label:after {
+  content: "\2714";
+  color: #fff;
+  background: #92c0d0;
+  font-weight: 600;
+}
+/* btn */
+.browser_form form > div > button {
+  width: 24%;
+  margin: 0 auto;
+  text-align: center;
+  border: none;
+  font-size: 1.5em;
+  padding: 0.4em 2.5em;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #e9c8b9;
+}
+/* copyright */
+.copyright {
+}
+.copyright p {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.2);
+  font-size: 0.8em;
+  font-weight: 500;
+}

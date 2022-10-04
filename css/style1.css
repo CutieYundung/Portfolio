@@ -21,6 +21,7 @@
 body {
   width: 100%;
   overflow-x: hidden;
+  letter-spacing: 0.03em;
 }
 .wrap {
   box-sizing: border-box;
@@ -63,6 +64,7 @@ header {
 }
 .logo_text {
   margin-left: 0.3em;
+  padding-top: 0.18em;
 }
 .logo_text span {
   display: block;
@@ -284,6 +286,7 @@ ul.desc li p {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgb(255, 255, 255, 0.5);
 }
 .icon_inner {
   height: 80px;
@@ -292,6 +295,7 @@ ul.desc li p {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #fbf8f1;
 }
 .circle_graph > div > svg {
   width: 100px;
