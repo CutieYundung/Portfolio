@@ -172,6 +172,7 @@
   position: absolute;
   top: -0.5em;
   left: 10px;
+  opacity: 0;
 }
 .browser_form input,
 textarea {
@@ -230,6 +231,11 @@ textarea::placeholder {
   border-radius: 10px;
   color: #fff;
   background-color: #e9c8b9;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.browser_form form > div > button:hover {
+  background-color: #cf8378;
 }
 /* copyright */
 .copyright {
@@ -239,4 +245,31 @@ textarea::placeholder {
   color: rgba(0, 0, 0, 0.2);
   font-size: 0.8em;
   font-weight: 500;
+}
+/* focus animation */
+.browser_form input:focus + label:not(.font) {
+  background-color: fff;
+  animation: label 0.5s forwards;
+}
+.browser_form textarea:focus + label {
+  background-color: fff;
+  animation: label 0.5s forwards;
+}
+.browser_form input:focus::placeholder,
+.browser_form textarea:focus::placeholder {
+  color: #fff;
+}
+@keyframes label {
+  0% {
+    opacity: 1;
+    font-size: 1.2em;
+    top: 0em;
+    left: 10px;
+  }
+  100% {
+    opacity: 1;
+    font-size: 1em;
+    top: -0.5em;
+    left: 10px;
+  }
 }
