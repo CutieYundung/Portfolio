@@ -72,6 +72,7 @@
   font-size: 0.8em;
   border-radius: 10px;
   margin-right: 1em;
+  transition: all 0.3s;
 }
 .modal_img {
   flex: 1.9;
@@ -98,6 +99,16 @@
   background-color: #b6a5a0;
   color: #fff;
   border: 1px solid #b6a5a0;
+}
+.doori_link a:hover {
+  background-color: #b6a5a0;
+  border: 1px solid #b6a5a0;
+  color: #fff;
+}
+.doori_link a:nth-child(1):hover {
+  background-color: #e9c8b9;
+  border: 1px solid #e9c8b9;
+  color: #7a5853;
 }
 /* keei */
 .keei_bg {

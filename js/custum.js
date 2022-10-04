@@ -1,4 +1,13 @@
 $(document).ready(function () {
+// navigation - 네비 
+var nav = $(".navigation > li > a")
+$(nav).click(function(){
+  var that = this;
+  console.log(that);
+  // $(this).addClass('on');
+  $(nav).removeClass('on');
+  $(that).addClass('on')
+})
 // modal - 모달창
 var gallery = $(".gallery > .gi_modal");
 $(".modal").hide();
@@ -12,8 +21,5 @@ for (let i = 0; i < gallery.length; i++){
 $(".modal_close").click(function(){
   $('.modal').fadeOut(300);
 })
-// sec3 - placrholder->label
-
-
 // 이 안으로 작성
 });

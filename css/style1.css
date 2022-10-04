@@ -22,6 +22,7 @@ body {
   width: 100%;
   overflow-x: hidden;
   letter-spacing: 0.03em;
+  scroll-behavior: smooth;
 }
 .wrap {
   box-sizing: border-box;
@@ -182,6 +183,7 @@ section.about {
   height: auto;
 }
 .click_me {
+  display: none; /*수정*/
   width: 557px;
   height: 555px;
   position: absolute;

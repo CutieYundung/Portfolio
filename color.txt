@@ -10,3 +10,9 @@ bin_yellow: rgb(235, 198, 128)  /  #ebc680
 bin_orange: rgb(233, 156, 125)  /  #e99c7d
 
 section : 
+
+💥E-mail
+ID :AKfycbzyvFnupuFuPq6LPjdG0CFagUPXJuhspqw60iPlO2bd7tPQjYUQG8SDM9S0QY1PADhj
+
+
+https://script.google.com/macros/s/AKfycbzyvFnupuFuPq6LPjdG0CFagUPXJuhspqw60iPlO2bd7tPQjYUQG8SDM9S0QY1PADhj/exec

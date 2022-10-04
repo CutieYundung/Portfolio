@@ -37,15 +37,15 @@
             </div>
           </div>
           <nav>
-            <ul>
-              <li><a href="#none" class="on">About</a></li>
-              <li><a href="#none">Works</a></li>
-              <li><a href="#none">Contact</a></li>
+            <ul class="navigation">
+              <li><a href="#top" class="on">About</a></li>
+              <li><a href="#sec_works">Works</a></li>
+              <li><a href="#sec_contact">Contact</a></li>
             </ul>
           </nav>
         </div>
       </header>
-      <section class="about">
+      <section class="about" id="sec_about">
         <div class="bg_circle"></div>
         <div class="inner">
           <div class="about_inner">
@@ -201,7 +201,7 @@
           </div>
         </div>
       </section>
-      <section class="works">
+      <section class="works" id="sec_works">
         <div class="inner">
           <div class="works_inner">
             <ul class="gallery">
@@ -265,7 +265,7 @@
           </div>
         </div>
       </section>
-      <section class="sec_contact">
+      <section class="sec_contact" id="sec_contact">
         <div class="contact_bg">
           <span class="c_b01"></span>
           <span class="c_b02"></span>
@@ -314,42 +314,47 @@
                     <p>궁금한 점이 있으시면 메세지를 남겨주세요!</p>
                   </div>
                   <div class="browser_form">
-                    <form>
-                      <div>
-                        <input type="text" id="name" placeholder="name" />
-                        <label for="name" class="move">name</label>
-                      </div>
-                      <div>
-                        <input
-                          type="text"
-                          id="contact"
-                          placeholder="phone or number"
-                        />
-                        <label for="contact" class="move">phone or email</label>
-                      </div>
+                    <form
+                      class="gform"
+                      method="POST"
+                      data-email="r_-loor@naver.com"
+                      action="https://script.google.com/macros/s/AKfycbzyvFnupuFuPq6LPjdG0CFagUPXJuhspqw60iPlO2bd7tPQjYUQG8SDM9S0QY1PADhj/exec"
+                    >
+                      <!-- <div> -->
+                      <input type="text" id="name" placeholder="name" />
+                      <label for="name" class="move">name</label>
+                      <!-- </div> -->
+                      <!-- <div> -->
+                      <input
+                        type="text"
+                        id="contact"
+                        placeholder="phone or number"
+                      />
+                      <label for="contact" class="move">phone or email</label>
+                      <!-- </div> -->
                       <p>
                         본인은 개인정보 보호법 제 15조에 의거하여 본인의
                         개인정보 제공에 동의합니다.
                       </p>
-                      <div>
-                        <input type="checkbox" name="" id="agree" />
-                        <label for="agree" class="font move"
-                          >개인정보 수집내용에 동의합니다.
-                        </label>
-                      </div>
-                      <div>
-                        <textarea
-                          name=""
-                          id="message"
-                          cols="30"
-                          rows="10"
-                          placeholder="message"
-                        ></textarea>
-                        <label for="message" class="move">message</label>
-                      </div>
-                      <div>
-                        <button type="submit">Send</button>
-                      </div>
+                      <!-- <div> -->
+                      <input type="checkbox" name="" id="agree" />
+                      <label for="agree" class="font move"
+                        >개인정보 수집내용에 동의합니다.
+                      </label>
+                      <!-- </div> -->
+                      <!-- <div> -->
+                      <textarea
+                        name=""
+                        id="message"
+                        cols="30"
+                        rows="10"
+                        placeholder="message"
+                      ></textarea>
+                      <label for="message" class="move">message</label>
+                      <!-- </div> -->
+                      <!-- <div> -->
+                      <button type="submit">Send</button>
+                      <!-- </div> -->
                     </form>
                   </div>
                 </div>

@@ -1,11 +1,9 @@
 /* section2 - works */
 .works {
   margin-top: 7em;
-  margin-bottom: 7em;
+  margin-bottom: 8em;
+  padding-top: 5em;
 }
-/* .inner {
-  border: 1px solid #000;
-} */
 .works_inner {
 }
 ul.gallery {
