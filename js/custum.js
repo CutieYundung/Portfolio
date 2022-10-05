@@ -9,6 +9,21 @@ $(nav).click(function(){
   $(that).addClass('on')
 })
 //네비 스크롤 이벤트
+$(window).scroll(function () {
+  //스크롤 높이 측정
+  var top = $(window).scrollTop();
+
+  if ( top <=  800) {
+    $(nav).removeClass('on');
+    $(nav).eq(0).addClass('on');
+  } else if( top >=  800 &&  top <= 1500){
+    $(nav).removeClass('on');
+    $(nav).eq(1).addClass('on');
+  } else if(top >= 1500){
+    $(nav).removeClass('on');
+    $(nav).eq(2).addClass('on');
+  }
+});
 
 
 // modal - 모달창
