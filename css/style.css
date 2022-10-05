@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 /* Google font*/
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 /* font-family: 'Inter', sans-serif; */
@@ -13,32 +15,43 @@
 }
 
 /* common 전체페이지 */
+* {
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  overflow-x: hidden;
+  letter-spacing: 0.03em;
+  scroll-behavior: smooth;
+}
 .wrap {
-  width: 1920px;
-  margin: auto;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
   color: rgb(0, 0, 0, 0.8);
 }
 .inner {
   width: 1536px;
-  border: 1px solid #000;
-  margin: auto;
+  margin: 0 auto;
 }
 a {
   color: rgb(0, 0, 0, 0.8);
 }
-/* loader 로더 */
-.loader {
+section {
+  width: 100%;
 }
 /*  header 헤더 */
 header {
   width: 100%;
   height: 40px;
-  padding-top: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  margin-top: 20px;
 }
 .header_inner {
   height: 100%;
+  margin: 0 150px;
   display: flex;
   justify-content: space-between;
 }
@@ -51,7 +64,8 @@ header {
   height: auto;
 }
 .logo_text {
-  border: 1px solid #000;
+  margin-left: 0.3em;
+  padding-top: 0.18em;
 }
 .logo_text span {
   display: block;
@@ -132,36 +146,34 @@ nav ul li a:hover:after {
   width: calc(100% - 1.6em);
   bottom: -0.25em;
 }
+
 /* section1 - about */
 section.about {
-  width: 100%;
-  /* padding: 5em 0; */
+  max-width: 100%;
   position: relative;
+  margin-top: calc(3em + 60px);
 }
-
 .about_inner {
   display: flex;
-  overflow: hidden;
-  padding: 5em; /*수정하기*/
-}
-.about_inner > div {
-  /* border: 1px solid red; */
 }
 .bg_circle {
-  width: 620px;
-  height: 653px;
+  width: 500px;
+  height: 650px;
   background-color: #e9c8b9;
   clip-path: ellipse(309.58px 326.44px at 50% 50%);
   position: absolute;
-  left: -10%;
+  left: 50%;
+  top: 0%;
+  transform: translateX(-200%);
   z-index: -1;
-}
-.bg_circle svg {
 }
 /* profile 프로필 */
 .profile {
   flex: 1;
   position: relative;
+  width: 100%;
+  height: 100%;
+  margin-top: 7em;
 }
 .profile_img {
   width: 100%;
@@ -171,18 +183,24 @@ section.about {
   height: auto;
 }
 .click_me {
-  width: 100%;
+  display: none; /*수정*/
+  width: 557px;
+  height: 555px;
   position: absolute;
-  top: 0;
-  left: 0;
-  /* animation: clickMe 3s linear infinite; */
+  top: -29px;
+  left: -6%;
+  cursor: pointer;
+  transform: rotate(-5deg);
+}
+.click_me:hover {
+  animation: clickMe 0.3s linear forwards;
 }
 @keyframes clickMe {
   form {
     transform: rotate(90deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(355deg);
   }
 }
 .click_me img {
@@ -191,7 +209,7 @@ section.about {
 }
 /* information 정보 */
 .information {
-  flex: 2.1;
+  flex: 1.8;
   display: grid;
   grid-template-columns: 1.2fr 1fr;
   grid-template-rows: repeat(3, auto);
@@ -199,8 +217,9 @@ section.about {
     "contact license"
     "education career"
     "skills skills";
-  grid-gap: 5em 0em;
-  margin-left: 10em;
+  grid-gap: 5em 7em;
+  margin-left: 5em;
+  padding: 5em 0em 5em 0em;
 }
 .information > div {
 }
@@ -228,18 +247,17 @@ section.about {
 }
 .subtitle span {
   display: inline-block;
-  font-size: 20px;
+  font-size: 1.4em;
   font-weight: 600;
   margin-left: 0.5em;
   padding-top: 0.3em;
 }
 ul.desc {
   font-family: "nomal";
-  font-size: 12px;
   padding-left: 2.5em;
 }
 ul.desc li {
-  font-size: 1.2em;
+  font-size: 1em;
 }
 ul.desc li span {
   display: inline-block;
@@ -247,6 +265,10 @@ ul.desc li span {
   margin-bottom: 0.8em;
   font-size: 0.9em;
   color: #7a5853;
+}
+ul.desc li p {
+  font-size: 0.9em;
+  padding-left: 10.5em;
 }
 /* skills-graph */
 .circle_graph {
@@ -266,6 +288,7 @@ ul.desc li span {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgb(255, 255, 255, 0.5);
 }
 .icon_inner {
   height: 80px;
@@ -274,6 +297,7 @@ ul.desc li span {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #fbf8f1;
 }
 .circle_graph > div > svg {
   width: 100px;

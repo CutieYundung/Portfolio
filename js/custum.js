@@ -19,7 +19,7 @@ $(window).scroll(function () {
   } else if( top >=  800 &&  top <= 1500){
     $(nav).removeClass('on');
     $(nav).eq(1).addClass('on');
-  } else if(top >= 1500){
+  } else if(top >= 1700){
     $(nav).removeClass('on');
     $(nav).eq(2).addClass('on');
   }

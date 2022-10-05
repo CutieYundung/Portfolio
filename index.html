@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/loader.css" />
+    <link rel="stylesheet" href="css/sec2(works).css" />
+    <link rel="stylesheet" href="css/sec3(contact).css" />
+    <link rel="stylesheet" href="css/modal.css" />
+    <!-- aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
 
   <body>
@@ -25,26 +30,24 @@
         </div>
       </div>
       <header>
-        <div class="inner">
-          <div class="header_inner">
-            <div class="logo">
-              <img src="image/logo/logo.svg" alt="logo" />
-              <div class="logo_text">
-                <span>PARK YUN AH'S</span>
-                <span>2022 PORTFOLIO</span>
-              </div>
+        <div class="header_inner">
+          <div class="logo">
+            <img src="image/logo/logo.svg" alt="logo" />
+            <div class="logo_text">
+              <span>PARK YUN AH'S</span>
+              <span>2022 PORTFOLIO</span>
             </div>
-            <nav>
-              <ul>
-                <li><a href="#none" class="on">About</a></li>
-                <li><a href="#none">Works</a></li>
-                <li><a href="#none">Contact</a></li>
-              </ul>
-            </nav>
           </div>
+          <nav>
+            <ul class="navigation">
+              <li><a href="#top" class="on">About</a></li>
+              <li><a href="#sec_works">Works</a></li>
+              <li><a href="#sec_contact">Contact</a></li>
+            </ul>
+          </nav>
         </div>
       </header>
-      <section class="about">
+      <section class="about" id="sec_about">
         <div class="bg_circle"></div>
         <div class="inner">
           <div class="about_inner">
@@ -57,7 +60,7 @@
               </div>
             </div>
             <div class="information">
-              <div class="contact">
+              <div class="contact" data-aos="fade-down">
                 <div class="subtitle">
                   <div class="bin bin_pink"></div>
                   <span>Contact</span>
@@ -70,7 +73,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="license">
+              <div class="license" data-aos="fade-down">
                 <div class="subtitle">
                   <div class="bin bin_yellow"></div>
                   <span>License</span>
@@ -80,7 +83,7 @@
                   <li><span>2022.02</span> GTQ포토샵1급</li>
                 </ul>
               </div>
-              <div class="education">
+              <div class="education" data-aos="fade-right">
                 <div class="subtitle">
                   <div class="bin bin_lightblue"></div>
                   <span>Education</span>
@@ -94,7 +97,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="career">
+              <div class="career" data-aos="fade-left">
                 <div class="subtitle">
                   <div class="bin bin_red"></div>
                   <span>Career</span>
@@ -108,7 +111,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="skills">
+              <div class="skills" data-aos="fade-up">
                 <div class="subtitle">
                   <div class="bin bin_orange"></div>
                   <span>Skills</span>
@@ -200,6 +203,324 @@
           </div>
         </div>
       </section>
+      <section class="works" id="sec_works">
+        <div class="inner">
+          <div class="works_inner">
+            <ul class="gallery" data-aos="fade-up">
+              <li class="gallery_item gi_modal" data-aos="fade-up">
+                <div class="item_bgc doori">
+                  <div class="item_img">
+                    <img src="image/sec2/doori_pink.png" alt="works_doori" />
+                  </div>
+                  <div class="item_text">
+                    <span>디자인|퍼블리싱</span>
+                    <h6>DOORI</h6>
+                    <p>두리몰 웹사이트</p>
+                  </div>
+                </div>
+              </li>
+              <li class="gallery_item gi_modal" data-aos="fade-up">
+                <div class="item_bgc keei">
+                  <div class="item_img">
+                    <img src="image/sec2/keei_blue.png" alt="works_doori" />
+                  </div>
+                  <div class="item_text">
+                    <span>디자인|퍼블리싱</span>
+                    <h6>KEEI</h6>
+                    <p>에너지경제연구원 웹사이트</p>
+                  </div>
+                </div>
+              </li>
+              <li class="gallery_item gi_modal" data-aos="fade-up">
+                <div class="item_bgc crown">
+                  <div class="item_img">
+                    <img src="image/sec2/crown_yellow.png" alt="works_doori" />
+                  </div>
+                  <div class="item_text">
+                    <span>디자인|퍼블리싱</span>
+                    <h6>CROWN</h6>
+                    <p>크라운제과 웹사이트</p>
+                  </div>
+                </div>
+              </li>
+              <li class="gallery_item gi_modal" data-aos="fade-up">
+                <div class="item_bgc protfolio">
+                  <div class="item_img">
+                    <img src="image/sec2/crown_yellow.png" alt="works_doori" />
+                  </div>
+                  <div class="item_text">
+                    <span>디자인|퍼블리싱</span>
+                    <h6>PORTFOLIO</h6>
+                    <p>개인포트폴리오 웹사이트</p>
+                  </div>
+                </div>
+              </li>
+              <li class="gallery_item" data-aos="fade-up">
+                <div class="item_bgc work-ing">
+                  <div class="ing_img">
+                    <img src="image/sec2/ing.svg" alt="작업중 아이콘" />
+                    <p>해당 페이지는 <b>작업 중</b>입니다</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="sec_contact" id="sec_contact">
+        <div class="contact_bg">
+          <span class="c_b01"></span>
+          <span class="c_b02"></span>
+          <span class="c_b03"></span>
+          <span class="c_b04"></span>
+          <span class="c_b05"></span>
+          <span class="c_b06">
+            <img src="image/sec3/phone_icon.png" alt="" />
+          </span>
+          <span class="c_b07">
+            <img src="image/sec3/speech_bubble.png" alt="" />
+          </span>
+          <div class="inner">
+            <div class="contact_inner">
+              <div class="c_textbox" data-aos="fade-right">
+                <h2>CONTACT</h2>
+                <div class="ment">
+                  <p>바쁜 시간에도 저의 포트폴리오를 봐주셔서 감사합니다.</p>
+                  <p>
+                    계속 업데이트 중이니 앞으로도 많은 기대 부탁드리겠습니다:)
+                  </p>
+                </div>
+                <div class="address">
+                  <div class="kakao_QR">
+                    <img
+                      src="image/sec3/QR.jpg"
+                      alt="카카오톡 오픈채팅방 QR코드"
+                    />
+                    <span>openkakao</span>
+                  </div>
+                  <ul class="desc">
+                    <li><span>E-mail</span> r_-loor@naver.com</li>
+                    <li><span>Blog</span> r_-loor@naver.com</li>
+                    <li>
+                      <span>Openkakao</span>https://open.kakao.com/o/sCdXhbEe
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="c_browser" data-aos="fade-left">
+                <div class="browser_inner">
+                  <div class="browser_top">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <p>궁금한 점이 있으시면 메세지를 남겨주세요!</p>
+                  </div>
+                  <div class="browser_form">
+                    <form
+                      class="gform"
+                      method="POST"
+                      data-email="r_-loor@naver.com"
+                      action="https://script.google.com/macros/s/AKfycbxQXz0nrgM8ZeDB2zactJy1Qim7RdY257MqbC37yEitL9rhrzFLl0hRbgkTR70ZkRMj/exec"
+                    >
+                      <div>
+                        <input
+                          type="text"
+                          id="name"
+                          placeholder="name"
+                          name="name"
+                          required
+                        />
+                        <label for="name" class="move">name</label>
+                      </div>
+                      <div>
+                        <input
+                          type="text"
+                          id="contact"
+                          placeholder="phone or number"
+                          name="text"
+                          required
+                        />
+                        <label for="contact" class="move">phone or email</label>
+                      </div>
+                      <p>
+                        본인은 개인정보 보호법 제 15조에 의거하여 본인의
+                        개인정보 제공에 동의합니다.
+                      </p>
+                      <div>
+                        <input
+                          type="checkbox"
+                          name=""
+                          id="agree"
+                          name="agree"
+                          checked
+                          required
+                        />
+                        <label for="agree" class="font move"
+                          >개인정보 수집내용에 동의합니다.
+                        </label>
+                      </div>
+                      <div>
+                        <textarea
+                          name="message"
+                          id="message"
+                          cols="30"
+                          rows="10"
+                          placeholder="message"
+                          required
+                        ></textarea>
+                        <label for="message" class="move">message</label>
+                      </div>
+                      <div>
+                        <button type="submit" class="submit_btn">Send</button>
+                      </div>
+                      <div style="display: none" class="thankyou_message">
+                        <p>Thank you! Have a nice day :)</p>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="copyright">
+              <p>COPYRIGHT C 2022 YUNAH.ALL RIGHTS RESERVED</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <ul class="sec2_modal">
+        <li class="modal doori_modal">
+          <div class="modal_bg doori_bg">
+            <div class="modal_text">
+              <div class="modal_title">
+                <h3>DOORI</h3>
+                <h4>두리몰 홈페이지 - 팀프로젝트</h4>
+              </div>
+              <div class="modal_info">
+                <p><span>제작기간</span>3주</p>
+                <p><span>프로젝트 유형</span>반응형 웹</p>
+                <p>
+                  <span>프로젝트 구성</span>main + sub(전체상품 페이지 /
+                  상품상세 페이지)
+                </p>
+                <p><span>Tool</span>html , css , Javascript, jQuery</p>
+                <p><span>참여도</span>90% (디자인/기획/퍼블리싱)</p>
+              </div>
+              <div class="modal_link doori_link">
+                <a href="#none">Go Site</a>
+                <a href="#none">Process</a>
+                <a href="#none">Style Guide</a>
+              </div>
+            </div>
+            <div class="modal_img">
+              <img src="image/modal/doori/doori_silver.png" alt="" />
+            </div>
+            <div class="modal_close">
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </li>
+        <li class="modal keei_modal">
+          <div class="modal_bg keei_bg">
+            <div class="modal_text">
+              <div class="modal_title">
+                <h3>KEEI</h3>
+                <h4>에너지경제연구원 홈페이지</h4>
+              </div>
+              <div class="modal_info">
+                <p><span>제작기간</span>2주</p>
+                <p><span>프로젝트 유형</span>반응형 웹</p>
+                <p>
+                  <span>프로젝트 구성</span>main + sub(로그인 및 회원가입 /
+                  경영목표)
+                </p>
+                <p><span>Tool</span>html , css , Javascript, jQuery</p>
+                <p><span>참여도</span>100% (개인작업)</p>
+              </div>
+              <div class="modal_link keei_link">
+                <a href="#none">Go Site</a>
+                <a href="#none">Process</a>
+                <a href="#none">Style Guide</a>
+              </div>
+            </div>
+            <div class="modal_img mobile">
+              <img src="image/modal/keei/mockup_silver.png" alt="" />
+            </div>
+            <div class="modal_close">
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </li>
+        <li class="modal crown_modal">
+          <div class="modal_bg crown_bg">
+            <div class="modal_text">
+              <div class="modal_title">
+                <h3>CROWN</h3>
+                <h4>크라운제과 홈페이지</h4>
+              </div>
+              <div class="modal_info">
+                <p><span>제작기간</span>2주</p>
+                <p><span>프로젝트 유형</span>반응형 웹</p>
+                <p><span>프로젝트 구성</span>main + sub(사이트맵 / 크라운CF)</p>
+                <p><span>Tool</span>html , css , Javascript, jQuery</p>
+                <p><span>참여도</span>100% (개인작업)</p>
+              </div>
+              <div class="modal_link crown_link">
+                <a href="#none">Go Site</a>
+                <a href="#none">Process</a>
+                <a href="#none">Style Guide</a>
+              </div>
+            </div>
+            <div class="modal_img mobile">
+              <img src="image/modal/crown/mockup_silver_1.png" alt="" />
+            </div>
+            <div class="modal_close">
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </li>
+        <li class="modal portfolio_modal">
+          <div class="modal_bg portfolio_bg">
+            <div class="modal_text">
+              <div class="modal_title">
+                <h3>PROTFOLIO</h3>
+                <h4>개인 포트폴리오 홈페이지</h4>
+              </div>
+              <div class="modal_info">
+                <p><span>제작기간</span>1주</p>
+                <p><span>프로젝트 유형</span>반응형 웹</p>
+                <p><span>프로젝트 구성</span>main + modal</p>
+                <p><span>Tool</span>html , css , Javascript, jQuery</p>
+                <p><span>참여도</span>100% (개인작업)</p>
+              </div>
+              <div class="modal_link portfolio_link">
+                <a href="#none">Go Site</a>
+                <a href="#none">Process</a>
+                <a href="#none">Style Guide</a>
+              </div>
+            </div>
+            <div class="modal_img mobile">
+              <img src="image/modal/portfolio/mockup_white.png" alt="" />
+            </div>
+            <div class="modal_close">
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </li>
+      </ul>
     </div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/custum.js"></script>
+    <script src="js/loading.js"></script>
+    <!-- email -->
+    <script data-cfasync="false" src="js/send-mail-custum.js"></script>
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
