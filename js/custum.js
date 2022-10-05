@@ -8,6 +8,9 @@ $(nav).click(function(){
   $(nav).removeClass('on');
   $(that).addClass('on')
 })
+//네비 스크롤 이벤트
+
+
 // modal - 모달창
 var gallery = $(".gallery > .gi_modal");
 $(".modal").hide();
@@ -20,6 +23,7 @@ for (let i = 0; i < gallery.length; i++){
 }
 $(".modal_close").click(function(){
   $('.modal').fadeOut(300);
-})
+});
+
 // 이 안으로 작성
 });

@@ -273,3 +273,18 @@ textarea::placeholder {
     left: 10px;
   }
 }
+/* 메일 제출 후 문구 */
+.thankyou_message {
+  display: flex;
+}
+.thankyou_message p {
+  flex: 8;
+  width: fit-content;
+  font-size: 1em;
+  font-family: "nomal";
+  width: 100%;
+  text-align: center;
+  color: #cf8378;
+}
+.thankyou_message p em {
+}

@@ -318,43 +318,62 @@
                       class="gform"
                       method="POST"
                       data-email="r_-loor@naver.com"
-                      action="https://script.google.com/macros/s/AKfycbzyvFnupuFuPq6LPjdG0CFagUPXJuhspqw60iPlO2bd7tPQjYUQG8SDM9S0QY1PADhj/exec"
+                      action="https://script.google.com/macros/s/AKfycbxQXz0nrgM8ZeDB2zactJy1Qim7RdY257MqbC37yEitL9rhrzFLl0hRbgkTR70ZkRMj/exec"
                     >
-                      <!-- <div> -->
-                      <input type="text" id="name" placeholder="name" />
-                      <label for="name" class="move">name</label>
-                      <!-- </div> -->
-                      <!-- <div> -->
-                      <input
-                        type="text"
-                        id="contact"
-                        placeholder="phone or number"
-                      />
-                      <label for="contact" class="move">phone or email</label>
-                      <!-- </div> -->
+                      <div>
+                        <input
+                          type="text"
+                          id="name"
+                          placeholder="name"
+                          name="name"
+                          required
+                        />
+                        <label for="name" class="move">name</label>
+                      </div>
+                      <div>
+                        <input
+                          type="text"
+                          id="contact"
+                          placeholder="phone or number"
+                          name="text"
+                          required
+                        />
+                        <label for="contact" class="move">phone or email</label>
+                      </div>
                       <p>
                         본인은 개인정보 보호법 제 15조에 의거하여 본인의
                         개인정보 제공에 동의합니다.
                       </p>
-                      <!-- <div> -->
-                      <input type="checkbox" name="" id="agree" />
-                      <label for="agree" class="font move"
-                        >개인정보 수집내용에 동의합니다.
-                      </label>
-                      <!-- </div> -->
-                      <!-- <div> -->
-                      <textarea
-                        name=""
-                        id="message"
-                        cols="30"
-                        rows="10"
-                        placeholder="message"
-                      ></textarea>
-                      <label for="message" class="move">message</label>
-                      <!-- </div> -->
-                      <!-- <div> -->
-                      <button type="submit">Send</button>
-                      <!-- </div> -->
+                      <div>
+                        <input
+                          type="checkbox"
+                          name=""
+                          id="agree"
+                          name="agree"
+                          checked
+                          required
+                        />
+                        <label for="agree" class="font move"
+                          >개인정보 수집내용에 동의합니다.
+                        </label>
+                      </div>
+                      <div>
+                        <textarea
+                          name="message"
+                          id="message"
+                          cols="30"
+                          rows="10"
+                          placeholder="message"
+                          required
+                        ></textarea>
+                        <label for="message" class="move">message</label>
+                      </div>
+                      <div>
+                        <button type="submit" class="submit_btn">Send</button>
+                      </div>
+                      <div style="display: none" class="thankyou_message">
+                        <p>Thank you! Have a nice day :)</p>
+                      </div>
                     </form>
                   </div>
                 </div>
@@ -493,5 +512,6 @@
     </div>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/custum.js"></script>
+    <script data-cfasync="false" src="js/send-mail-custum.js"></script>
   </body>
 </html>
