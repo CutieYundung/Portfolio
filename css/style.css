@@ -218,7 +218,7 @@ section.about {
     "education career"
     "skills skills";
   grid-gap: 5em 7em;
-  margin-left: 5em;
+  margin-left: 3.7em;
   padding: 5em 0em 5em 0em;
 }
 .information > div {
@@ -267,8 +267,9 @@ ul.desc li span {
   color: #7a5853;
 }
 ul.desc li p {
-  font-size: 0.9em;
-  padding-left: 10.5em;
+  font-size: 0.85em;
+  padding-left: 11.9em;
+  opacity: 0.8;
 }
 /* skills-graph */
 .circle_graph {

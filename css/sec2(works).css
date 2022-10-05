@@ -4,8 +4,6 @@
   margin-bottom: 8em;
   padding-top: 5em;
 }
-.works_inner {
-}
 ul.gallery {
   display: flex;
   flex-wrap: wrap;
@@ -25,8 +23,8 @@ li.gallery_item {
   box-shadow: 0 0 2px rgba(122, 88, 83, 0.185);
   transition: 0.5s;
 }
-.item_bgc:hover {
-  background-color: #fff;
+.item_bgc:hover .item_text {
+  background-color: rgba(255, 255, 255, 0.7);
 }
 .item_img {
   width: 100%;
@@ -52,6 +50,7 @@ li.gallery_item {
   left: 0;
   padding: 1em 1em 2em 1em;
   box-sizing: border-box;
+  transition: 0.3s;
 }
 .item_text span {
   font-family: "nomal";
