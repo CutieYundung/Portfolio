@@ -42,13 +42,15 @@ section {
 /*  header 헤더 */
 header {
   width: 100%;
-  height: 40px;
+  height: 80px;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
-  margin-top: 20px;
+  padding-top: 20px;
+  transition: 0.5s;
 }
+
 .header_inner {
   height: 100%;
   margin: 0 150px;
@@ -62,6 +64,7 @@ header {
 .logo img {
   width: 50px;
   height: auto;
+  padding-bottom: 1.2em;
 }
 .logo_text {
   margin-left: 0.3em;
@@ -150,6 +153,7 @@ nav ul li a:hover:after {
 /* section1 - about */
 section.about {
   max-width: 100%;
+  height: auto;
   position: relative;
   margin-top: calc(3em + 60px);
 }
@@ -158,6 +162,7 @@ section.about {
 }
 .bg_circle {
   width: 500px;
+  max-width: 100%;
   height: 650px;
   background-color: #e9c8b9;
   clip-path: ellipse(309.58px 326.44px at 50% 50%);
@@ -221,8 +226,6 @@ section.about {
   margin-left: 3.7em;
   padding: 5em 0em 5em 0em;
 }
-.information > div {
-}
 .contact {
   grid-area: contact;
 }
@@ -242,8 +245,6 @@ section.about {
   display: flex;
   text-transform: uppercase;
   margin-bottom: 1em;
-}
-.bin_lightpink {
 }
 .subtitle span {
   display: inline-block;
@@ -299,6 +300,14 @@ ul.desc li p {
   align-items: center;
   justify-content: center;
   background-color: #fbf8f1;
+}
+.skill_img {
+  width: 50%;
+  height: 50%;
+}
+.skill_img img {
+  max-width: 100%;
+  height: auto;
 }
 .circle_graph > div > svg {
   width: 100px;

@@ -1,0 +1,217 @@
+@media (max-width: 767px) {
+  .wrap {
+    width: 100vw;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    color: rgb(0, 0, 0, 0.8);
+  }
+  .inner {
+    width: 100%;
+    border: 1px solid red;
+    padding: 0 1em;
+  }
+  /*  header 헤더 */
+  header {
+    position: fixed;
+    width: 100vw;
+    padding: 20px 0.5em 0 0.5em;
+    border: 1px solid #000;
+  }
+  .header_inner {
+    height: 100%;
+    margin: 0px;
+    display: flex;
+  }
+  nav {
+    display: none;
+  }
+
+  /* section1 - about */
+  section.about {
+    max-width: 100%;
+    margin-top: 0;
+  }
+  .about_inner {
+    flex-direction: column;
+  }
+  .bg_circle {
+    width: 500px;
+    height: 650px;
+    background-color: #e9c8b9;
+    clip-path: ellipse(309.58px 326.44px at 50% 50%);
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    transform: translateX(00%);
+    z-index: -1;
+    display: none; /*수정*/
+  }
+  .profile {
+    flex: 1;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: 7em;
+    display: none; /*수정*/
+  }
+
+  /* information 정보 */
+  .information {
+    flex: 1.8;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+      "contact" "license"
+      "education" "career"
+      "skills";
+    grid-gap: 3em 0em;
+    margin-left: 0em;
+    padding: 5em 0 0 0;
+  }
+  .subtitle span {
+    font-size: 5vw;
+  }
+  ul.desc {
+    font-family: "nomal";
+    padding-left: 1.5em;
+  }
+  ul.desc li {
+    font-size: 3.86vw;
+  }
+  ul.desc li span {
+    margin-right: 1em;
+    font-size: 3vw;
+  }
+  ul.desc li p {
+    font-size: 0.85em;
+    padding-left: 9.5em;
+  }
+  /* skills-graph */
+  .circle_graph {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0em;
+  }
+  .circle_graph > div {
+    margin: 0em 0.5em 3.5em 0.5em;
+  }
+
+  /* section2 - works */
+  .works {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding-top: 0em;
+  }
+  ul.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0em;
+  }
+  li.gallery_item {
+    width: 100%;
+    height: 336.5px;
+  }
+
+  /* text */
+  .item_text {
+    height: calc(400px - 315px);
+    overflow: hidden;
+  }
+  .item_text span {
+    width: fit-content;
+    font-size: 3vw;
+  }
+  .item_text h6 {
+    font-size: 5vw;
+    margin: 0 0 0.5em 0;
+  }
+  .item_text p {
+    font-size: 1.2em;
+  }
+  /* 작업중 표시 */
+  .work-ing {
+  }
+  .ing_img {
+  }
+  .ing_img img {
+    width: 60%;
+  }
+  .work-ing p {
+    font-size: 4vw;
+  }
+  /* section3 - contact */
+  .sec_contact {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 2em;
+    padding-top: 2em;
+    /* 마진 수정 */
+  }
+  /* 컨텐츠 */
+  .contact_inner {
+    display: flex;
+    flex-direction: column;
+    margin: 2em 0;
+  }
+  .c_textbox {
+    flex: 1;
+    padding: 2em 0;
+  }
+  .c_textbox h2 {
+    font-size: 13vw;
+  }
+  .ment p {
+    font-size: 3.8vw;
+    margin-bottom: 0.7em;
+  }
+  .address {
+    display: flex;
+    position: relative;
+  }
+  .kakao_QR {
+    width: 18%;
+    position: absolute;
+    margin-right: 0.5em;
+    right: 0;
+    top: 10px;
+    color: transparent;
+  }
+  .kakao_QR img {
+    margin-bottom: 0;
+  }
+  .address ul.desc li {
+    font-size: 3.86vw;
+  }
+  .address ul.desc span {
+    margin-right: 0.5em;
+  }
+
+  /* 폼 */
+  .browser_inner {
+    border-radius: 20px;
+  }
+  .browser_top {
+    padding: 1em 1.5em 0.7em 1.5em;
+  }
+  .browser_top span {
+    width: 12px;
+    height: 12px;
+    margin-right: 0.2em;
+  }
+  .browser_top p {
+    font-size: 3.6vw;
+  }
+  /* btn */
+  .browser_form form > div > button {
+    width: 50%;
+    font-size: 4.5vw;
+    padding: 0.5em 2.5em;
+  }
+  /* copyright */
+  .copyright p {
+    font-size: 2.8vw;
+  }
+  /* 이 안으로 작성 */
+}
