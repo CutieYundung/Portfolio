@@ -28,6 +28,7 @@ body {
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
   color: rgb(0, 0, 0, 0.8);
+  font-size: 100%;
 }
 .inner {
   width: 1536px;
@@ -279,13 +280,13 @@ ul.desc li p {
   padding: 0 7em 0 2em;
 }
 .circle_graph > div {
-  width: 100px;
-  height: 100px;
+  width: 10vmin;
+  height: 10vmin;
   position: relative;
 }
 .skill_icon {
-  height: 100px;
-  width: 100px;
+  height: 10.5vmin;
+  width: 11vmin;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -293,8 +294,8 @@ ul.desc li p {
   background-color: rgb(255, 255, 255, 0.5);
 }
 .icon_inner {
-  height: 80px;
-  width: 80px;
+  height: 8vmin;
+  width: 8vmin;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -302,16 +303,17 @@ ul.desc li p {
   background-color: #fbf8f1;
 }
 .skill_img {
-  width: 50%;
-  height: 50%;
+  width: 60%;
+  height: 60%;
 }
 .skill_img img {
   max-width: 100%;
   height: auto;
+  padding-top: 5%;
 }
 .circle_graph > div > svg {
-  width: 100px;
-  height: 100px;
+  width: 11vmin;
+  height: 10.4vmin;
   position: absolute;
   top: 0;
   left: 0;

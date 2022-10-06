@@ -1,4 +1,7 @@
 $(document).ready(function () {
+  window.onresize = function () {
+    document.location.reload();
+  };
   // navigation - 네비
   var nav = $(".navigation > li > a");
   $(nav).click(function () {
@@ -65,3 +68,8 @@ $(window).scroll(function () {
     });
   }
 });
+//너비 구하기
+var w = document.querySelector(".gallery > li").clientWidth;
+console.log(w);
+//윈도우 크기 변할 때마다 새로고침
+

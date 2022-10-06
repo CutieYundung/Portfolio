@@ -1,4 +1,7 @@
 @media (max-width: 767px) {
+  html {
+    font-size: 62.5%;
+  }
   .wrap {
     width: 100vw;
     box-sizing: border-box;
@@ -8,13 +11,13 @@
   .inner {
     width: 100%;
     border: 1px solid red;
-    padding: 0 1em;
+    padding: 0 1.6em;
   }
   /*  header 헤더 */
   header {
     position: fixed;
     width: 100vw;
-    padding: 20px 0.5em 0 0.5em;
+    padding: 20px 0.8em 0 0.8em;
     border: 1px solid #000;
   }
   .header_inner {
@@ -69,33 +72,39 @@
     margin-left: 0em;
     padding: 5em 0 0 0;
   }
+  .subtitle {
+    margin-bottom: 1.6em;
+  }
   .subtitle span {
-    font-size: 5vw;
+    font-size: 2.2em;
+    margin-left: 0.8em;
   }
   ul.desc {
     font-family: "nomal";
-    padding-left: 1.5em;
+    padding-left: 3.2em;
   }
   ul.desc li {
-    font-size: 3.86vw;
+    font-size: 1.4em;
   }
   ul.desc li span {
-    margin-right: 1em;
-    font-size: 3vw;
+    margin-right: 1.6em;
   }
   ul.desc li p {
     font-size: 0.85em;
-    padding-left: 9.5em;
+    padding-left: 11.6em;
   }
   /* skills-graph */
   .circle_graph {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    padding: 0em;
+    justify-content: space-between;
+    padding: 0em 2.5em;
   }
   .circle_graph > div {
-    margin: 0em 0.5em 3.5em 0.5em;
+    width: 10vmin;
+    height: 10vmin;
+    margin: 0em 0em 3.5em 0em;
   }
 
   /* section2 - works */
@@ -108,23 +117,25 @@
     display: flex;
     flex-wrap: wrap;
     padding: 0em;
+    gap: 30px 3%;
   }
   li.gallery_item {
-    width: 100%;
-    height: 336.5px;
   }
-
+  .item_bgc {
+    border-radius: 10px;
+  }
   /* text */
   .item_text {
-    height: calc(400px - 315px);
+    height: calc(41.9vmin - 31.5vmin);
     overflow: hidden;
+    border-radius: 0 0 10px 10px;
   }
   .item_text span {
     width: fit-content;
-    font-size: 3vw;
+    font-size: 0.9em;
   }
   .item_text h6 {
-    font-size: 5vw;
+    font-size: 1.6em;
     margin: 0 0 0.5em 0;
   }
   .item_text p {
@@ -136,10 +147,11 @@
   .ing_img {
   }
   .ing_img img {
-    width: 60%;
+    width: 70%;
   }
   .work-ing p {
-    font-size: 4vw;
+    width: 100%;
+    font-size: 1.2em;
   }
   /* section3 - contact */
   .sec_contact {
@@ -149,6 +161,7 @@
     padding-top: 2em;
     /* 마진 수정 */
   }
+
   /* 컨텐츠 */
   .contact_inner {
     display: flex;
@@ -160,37 +173,47 @@
     padding: 2em 0;
   }
   .c_textbox h2 {
-    font-size: 13vw;
+    font-size: 3em;
   }
   .ment p {
-    font-size: 3.8vw;
-    margin-bottom: 0.7em;
+    font-size: 1.4em;
+    margin-bottom: 0.5em;
   }
   .address {
     display: flex;
     position: relative;
   }
   .kakao_QR {
-    width: 18%;
+    width: 15%;
     position: absolute;
-    margin-right: 0.5em;
-    right: 0;
-    top: 10px;
-    color: transparent;
+    margin-right: 0em;
+    left: 0;
+    top: 100%;
+    color: #ebc680;
+    font-size: 1.2em;
   }
   .kakao_QR img {
     margin-bottom: 0;
   }
+  .address ul.desc {
+    padding: 0;
+  }
   .address ul.desc li {
-    font-size: 3.86vw;
+    font-size: 1.4rem;
   }
   .address ul.desc span {
     margin-right: 0.5em;
+    font-size: 1.2rem;
   }
 
   /* 폼 */
+  .c_browser {
+    margin-top: 10em;
+    margin-bottom: 4em;
+  }
   .browser_inner {
     border-radius: 20px;
+    margin-top: 0em;
   }
   .browser_top {
     padding: 1em 1.5em 0.7em 1.5em;
@@ -201,17 +224,125 @@
     margin-right: 0.2em;
   }
   .browser_top p {
-    font-size: 3.6vw;
+    font-size: 1.4em;
   }
+
   /* btn */
   .browser_form form > div > button {
-    width: 50%;
-    font-size: 4.5vw;
-    padding: 0.5em 2.5em;
+    width: 30%;
+    font-size: 1.5em;
+    padding: 0.5em 2em;
   }
   /* copyright */
   .copyright p {
-    font-size: 2.8vw;
+    font-size: 1em;
   }
+  /* 배경 */
+  .contact_bg {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .contact_bg > span {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    max-width: 100%;
+  }
+  .c_b01 {
+    background-color: #e99c7d;
+    top: 104%;
+    left: 2%;
+  }
+  .c_b02 {
+    background-color: #ebc680;
+    top: 101%;
+    right: 5%;
+  }
+  .c_b03 {
+    width: 8%;
+    background-color: #bcd6e5;
+    bottom: 102%;
+    left: 40%;
+  }
+  .c_b04 {
+    width: 0;
+    background-color: #92c0d0;
+    bottom: 20%;
+    left: 0%;
+  }
+  .c_b05 {
+    width: 0;
+    background-color: #e99c7d;
+    bottom: 10%;
+    left: 0%;
+  }
+  .c_b06 {
+    width: 15%;
+    top: 100%;
+    left: 50%;
+    opacity: 0;
+  }
+  .c_b07 {
+    width: 40%;
+    bottom: 102%;
+    right: -3%;
+  }
+  .c_b06 img,
+  .c_b07 img {
+    max-width: 100%;
+    height: auto;
+  }
+
   /* 이 안으로 작성 */
+}
+@media (max-width: 450px) {
+  /* skills-graph */
+  .circle_graph {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0em 2.5em;
+  }
+  .circle_graph > div {
+    width: 10vmax;
+    height: 10vmax;
+    border: 1px solid #000;
+    margin: 0em 0em 3.5em 0em;
+  }
+  .skill_icon {
+    height: 10.5vmax;
+    width: 11vmax;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255, 0.5);
+  }
+  .icon_inner {
+    height: 8vmax;
+    width: 8vmax;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fbf8f1;
+  }
+  .skill_img {
+    width: 60%;
+    height: 60%;
+  }
+  .skill_img img {
+    max-width: 100%;
+    height: auto;
+    padding-top: 5%;
+  }
+  .circle_graph > div > svg {
+    width: 11vmax;
+    height: 10.4vmax;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(-84deg);
+  }
 }

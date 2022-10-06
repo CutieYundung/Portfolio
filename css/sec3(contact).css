@@ -5,63 +5,7 @@
   margin-bottom: 2em;
   padding-top: 2em;
 }
-/* 배경 */
-.contact_bg {
-  position: relative;
-}
-.contact_bg > span {
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 1;
-}
-.c_b01 {
-  width: 10%;
-  height: 15px;
-  border-radius: 25px;
-  background-color: #e99c7d;
-  transform: translate(-300%, 1000%);
-}
-.c_b02 {
-  width: 15px;
-  height: 15px;
-  border-radius: 3px;
-  background-color: #ebc680;
-  transform: translate(-700%, 800%);
-}
-.c_b03 {
-  width: 3.5%;
-  height: 15px;
-  border-radius: 25px;
-  background-color: #bcd6e5;
-  transform: translate(200%, -2600%);
-}
-.c_b04 {
-  width: 5%;
-  height: 15px;
-  border-radius: 25px;
-  background-color: #92c0d0;
-  transform: translate(850%, 600%);
-}
-.c_b05 {
-  width: 15px;
-  height: 15px;
-  border-radius: 3px;
-  background-color: #e99c7d;
-  transform: translate(5300%, 1000%);
-}
-.c_b06 {
-  transform: translate(-300%, 0%);
-}
-.c_b07 {
-  transform: translate(240%, -600%);
-}
-.c_b06 img,
-.c_b07 img {
-  max-width: 100%;
-  height: auto;
-}
+
 /* 컨텐츠 */
 .contact_inner {
   display: flex;
@@ -277,6 +221,73 @@ textarea::placeholder {
     top: -0.5em;
     left: 10px;
   }
+}
+/* 배경 */
+.contact_bg {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.contact_bg > span {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  max-width: 100%;
+}
+.c_b01 {
+  width: 20%;
+  height: 15px;
+  border-radius: 25px;
+  background-color: #e99c7d;
+  bottom: 12%;
+  left: -80%;
+}
+.c_b02 {
+  width: 15px;
+  height: 15px;
+  border-radius: 3px;
+  background-color: #ebc680;
+  bottom: 18%;
+  right: 105%;
+}
+.c_b03 {
+  width: 5%;
+  height: 15px;
+  border-radius: 25px;
+  background-color: #bcd6e5;
+  bottom: 104%;
+  left: 30%;
+}
+.c_b04 {
+  width: 11%;
+  height: 15px;
+  border-radius: 25px;
+  background-color: #92c0d0;
+  bottom: 20%;
+  left: 102%;
+}
+.c_b05 {
+  width: 15px;
+  height: 15px;
+  border-radius: 3px;
+  background-color: #e99c7d;
+  bottom: 10%;
+  left: 105%;
+}
+.c_b06 {
+  width: 12%;
+  top: 50%;
+  left: -40%;
+}
+.c_b07 {
+  width: 23.5%;
+  bottom: 105%;
+  right: 11%;
+}
+.c_b06 img,
+.c_b07 img {
+  max-width: 100%;
+  height: auto;
 }
 /* 메일 제출 후 문구 */
 .thankyou_message {
