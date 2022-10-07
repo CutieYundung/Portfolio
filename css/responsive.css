@@ -11,14 +11,13 @@
   .inner {
     width: 100%;
     border: 1px solid red;
-    padding: 0 1.6em;
+    padding: 0 1.5em;
   }
   /*  header 헤더 */
   header {
     position: fixed;
     width: 100vw;
-    padding: 20px 0.8em 0 0.8em;
-    border: 1px solid #000;
+    padding: 0 1.5em;
   }
   .header_inner {
     height: 100%;
@@ -32,7 +31,7 @@
   /* section1 - about */
   section.about {
     max-width: 100%;
-    margin-top: 0;
+    margin-top: 3em;
   }
   .about_inner {
     flex-direction: column;
@@ -297,18 +296,21 @@
   /* 이 안으로 작성 */
 }
 @media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
   /* skills-graph */
   .circle_graph {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     padding: 0em 2.5em;
+    font-size: 1.2em;
   }
   .circle_graph > div {
     width: 10vmax;
     height: 10vmax;
-    border: 1px solid #000;
-    margin: 0em 0em 3.5em 0em;
+    margin: 0em 0.8em 3.5em 0.8em;
   }
   .skill_icon {
     height: 10.5vmax;
@@ -344,5 +346,37 @@
     top: 0;
     left: 0;
     transform: rotate(-84deg);
+  }
+  /* section2 - works */
+  .works {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding-top: 0em;
+  }
+  ul.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0em;
+    gap: 30px 0%;
+  }
+  li.gallery_item {
+    width: 100vmin;
+    height: 76.3vmin;
+  }
+  .item_bgc {
+    border-radius: 10px;
+  }
+  .item_text {
+    height: calc(100vmin - 85vmin);
+    padding: 1.5em 1.5em 2em 1.5em;
+  }
+  .item_text span {
+    font-size: 1.4em;
+  }
+  .item_text h6 {
+    font-size: 2em;
+  }
+  .item_text p {
+    font-size: 1.6em;
   }
 }
