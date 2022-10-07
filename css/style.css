@@ -162,19 +162,17 @@ section.about {
 .about_inner {
   display: flex;
 }
-.bg_circle {
-  width: 500px;
-  max-width: 100%;
-  height: 650px;
-  background-color: #e9c8b9;
-  clip-path: ellipse(309.58px 326.44px at 50% 50%);
-  position: absolute;
-  left: 50%;
-  top: 0%;
-  transform: translateX(-200%);
-  z-index: -1;
-}
 /* profile 프로필 */
+.bg_circle {
+  width: 50vmin;
+  max-width: 100%;
+  height: 68vmin;
+  background-color: #e9c8b9;
+  clip-path: ellipse(31.5vmin 32.6vmin at 50% 50%);
+  position: absolute;
+  right: 45%;
+  bottom: 0%;
+}
 .profile {
   flex: 1;
   position: relative;
@@ -183,6 +181,8 @@ section.about {
   margin-top: 7em;
 }
 .profile_img {
+  position: relative;
+  height: 100%;
   width: 100%;
 }
 .profile_img img {
@@ -380,4 +380,7 @@ ul.desc li p {
   100% {
     stroke-dashoffset: 100;
   }
+}
+.m_title {
+  display: none;
 }
