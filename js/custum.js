@@ -1,7 +1,10 @@
 $(document).ready(function () {
   window.onresize = function () {
-    document.location.reload();
+    // document.location.reload();
   };
+  setTimeout(() => 
+    $('.loader').fadeOut()
+  , 2000);
   // navigation - 네비
   var nav = $(".navigation > li > a");
   $(nav).click(function () {
