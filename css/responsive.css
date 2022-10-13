@@ -1,6 +1,7 @@
 @media (max-width: 767px) {
   html {
     font-size: 62.5%;
+    overflow-x: hidden;
   }
   .wrap {
     width: 100vw;
@@ -18,16 +19,17 @@
     position: fixed;
     width: 100vw;
     padding: 0 1.5em;
+    height: 50px;
   }
   .header_inner {
     height: 100%;
     margin: 0px;
     display: flex;
+    justify-content: space-between;
   }
   nav {
     display: none;
   }
-
   /* section1 - about */
   section.about {
     max-width: 100%;
@@ -38,7 +40,7 @@
   }
   .bg_circle {
     position: absolute;
-    right: calc(45% + 3em);
+    right: calc(45% + 4em);
     bottom: 0%;
   }
   .profile {
@@ -303,19 +305,103 @@
     margin-bottom: 2em;
     float: right;
   }
-  /* modal */
+  /* modal--------------------------------------------- */
+  .sec2_modal {
+    padding: 0em 1em;
+  }
   .modal {
-    width: 100%;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 1em;
-    background-color: rgba(255, 255, 255, 0.8);
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 110;
+    padding: 0 5em;
+    padding: 5em;
+    padding: 0 2em;
+  }
+  .modal_bg {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 15px 15px 25px 25px;
+    padding: 0em 2em;
+  }
+  .modal_bg:before {
+    height: calc(100% - 60vmin);
+    border-radius: 0 0 15px 15px;
+  }
+  .modal_text {
+    width: 100%;
+    flex: 1;
+    padding-top: 0em;
+    color: #7a5853;
+    order: 2;
+  }
+  .modal_title {
+    margin-bottom: 3em;
+  }
+  .modal_title h3 {
+    font-size: 2.5em;
+    margin-bottom: 0.3em;
+  }
+  .modal_title h4 {
+    font-size: 1.2em;
+  }
+  .modal_link a {
+    font-size: 0.9em;
+    border-radius: 5px;
+  }
+  .modal_img {
+    order: 1;
+    width: 100%;
+  }
+  .modal_close {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+    order: 3;
+    margin: 3em 0;
+  }
+  /* Doori*/
+  .doori_bg .modal_text {
+    color: #7a5853;
+  }
+  .doori_bg .modal_info {
+    color: #7a5853;
+  }
+  .doori_bg .modal_info p span {
+    color: #b6a5a0;
+  }
+  /* keei */
+  .keei_bg .modal_text {
+    color: #041a3b;
+  }
+  .keei_bg .modal_info {
+    color: #041a3b;
+  }
+  .keei_bg .modal_info p span {
+    color: rgb(4, 26, 59, 0.7);
+  }
+  /* crown */
+  .crown_bg .modal_text {
+    color: #c54769;
+  }
+  .crown_bg .modal_info {
+    color: #c54769;
+  }
+  .crown_bg .modal_info p span {
+    color: #c54769a1;
+  }
+  /* crown */
+  .keei_bg .modal_text {
+    color: #041a3b;
+  }
+  .keei_bg .modal_info {
+    color: #041a3b;
+  }
+  .keei_bg .modal_info p span {
+    color: rgb(4, 26, 59, 0.7);
   }
   /* 이 안으로 작성 */
 }

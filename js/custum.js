@@ -4,7 +4,7 @@ $(document).ready(function () {
   };
   setTimeout(() => 
     $('.loader').fadeOut()
-  , 2000);
+  , 1000);
   // navigation - 네비
   var nav = $(".navigation > li > a");
   $(nav).click(function () {
@@ -35,16 +35,17 @@ $(document).ready(function () {
   // modal - 모달창
   var gallery = $(".gallery > .gi_modal");
   $(".modal").hide();
-
   for (let i = 0; i < gallery.length; i++) {
     $(gallery)
-      .eq(i)
-      .on("click", function () {
-        $(".modal").hide();
-        $(`.modal:eq(${i})`).stop().fadeIn(300);
+    .eq(i)
+    .on("click", function () {
+      $(".modal").hide();
+      $(".sec2_modal").show();
+      $(`.modal:eq(${i})`).stop().fadeIn(300);
       });
-  }
-  $(".modal_close").click(function () {
+    }
+    $(".modal_close").click(function () {
+    $(".sec2_modal").hide();
     $(".modal").fadeOut(300);
   });
 
@@ -72,7 +73,7 @@ $(window).scroll(function () {
   }
 });
 //너비 구하기
-var w = document.querySelector(".gallery > li").clientWidth;
-console.log(w);
+
+$(".modal_bg:before").css("background-color","red");
 //윈도우 크기 변할 때마다 새로고침
 
